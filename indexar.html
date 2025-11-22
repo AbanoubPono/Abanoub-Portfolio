@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abanoub — Portfolio</title>
+  <meta name="description" content="Abanoub Yousry — Web Designer & Developer from Cairo. Portfolio: projects, about and contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="logo">
+        <div class="dot">AB</div>
+        <div>
+          <div style="font-weight:700">Abanoub Yousry</div>
+          <div style="font-size:12px;color:var(--muted)">Web Designer & Developer</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">الصفحة الرئيسية</a></li>
+          <li><a href="#about">عني</a></li>
+          <li><a href="#projects">المشاريع</a></li>
+          <li><a href="#contact">تواصل</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <button class="ghost" onclick="downloadCV()">تحميل السيرة الذاتية</button>
+        <button class="btn" id="hireBtn">توظيف</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="home" class="hero">
+      <div class="card intro fade-up" style="--delay:0ms">
+        <h1>مرحبًا، أنا <span>أبانوب</span></h1>
+        <h3 style="margin-top:6px">مصمم ومطور ويب من القاهرة، مصر</h3>
+        <p>أبني مواقع ويب حديثة وسريعة تركز على تجربة المستخدم وتحويل الزوار إلى عملاء. أعمل بالـ HTML, CSS, JavaScript و PHP، وأستخدم Bootstrap عند الحاجة.</p>
+        <div style="margin-top:18px; display:flex; gap:10px; align-items:center">
+          <button class="btn" id="hireNow">تواصل معي</button>
+          <a class="ghost" href="#projects">شاهد مشاريعي</a>
+        </div>
+        <div class="socials" aria-label="social links">
+          <a href="https://www.facebook.com/share/16StpRuh7W/" title="Facebook">f</a>
+          <a href="https://www.instagram.com/bebopono?igsh=MWFjY3pqbzR2Z3hocQ==" title="Instagram">i</a>
+          <a href="https://www.linkedin.com/in/abanob-yousry-964a89354" title="LinkedIn">in</a>
+          <a href="https://github.com/AbanoubPono" title="GitHub">gh</a>
+        </div>
+      </div>
+
+      <aside class="card profile-img fade-up" style="--delay:120ms">
+        <!-- ضع صورتك هنا -->
+        <img src="./images/web.JPG" alt="Abanoub profile" />
+      </aside>
+    </section>
+
+    <section id="about" class="about">
+      <div class="card fade-up">
+        <h2>عنّي</h2>
+        <p class="muted">اسمي أبانوب يسري عزيز. لدي خبرة في تصميم واجهات المستخدم وإنشاء صفحات ويب متجاوبة. أحب تحويل الأفكار إلى واجهات عملية وجذابة.</p>
+        <h4 style="margin-top:12px">المهارات</h4>
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS / SCSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">PHP & MySQL</div>
+          <div class="skill">Bootstrap</div>
+          <div class="skill">Responsive Design</div>
+        </div>
+        <h4 style="margin-top:14px">الخبرات</h4>
+        <ul style="color:var(--muted);line-height:1.6">
+          <li>مساعد مهندس — يونيلكس</li>
+          <li>مدير مطعم — جارنيل</li>
+        </ul>
+      </div>
+
+      <div class="card fade-up">
+        <h3>المعلومات</h3>
+        <p style="color:var(--muted)"><strong>الموقع:</strong> الجيزة، مصر</p>
+        <p style="color:var(--muted)"><strong>البريد:</strong> abanobpop944@gmail.com</p>
+        <p style="color:var(--muted)"><strong>الهاتف:</strong> 01228105398</p>
+        <div style="margin-top:12px">
+          <a class="btn" href="https://wa.me/201228105398" target="_blank">أرسل رسالة واتساب</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="margin-top:18px">
+      <h2 style="margin-bottom:10px">المشاريع</h2>
+      <div class="projects-grid">
+        <article class="project fade-up">
+          <img src="./images/roboot.png" alt="Project 1">
+          <h4 style="margin:10px 0 0 0">متجر إلكتروني لجهاز روبوت</h4>
+          <p style="color:var(--muted); font-size:14px">واجهة عرض متجر متجاوبة مع نظام طلبات وصفحة إدارة بسيطة.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">PHP</span><span class="tag">Bootstrap</span></div>
+          <a href="./RobootCar.Web/index.html" target="_blank" class="btn" style="display:inline-block;margin-top:10px;text-decoration:none;text-align:center">زيارة الموقع</a>
+        </article>
+
+        <article class="project fade-up">
+          <img src="./images/garnell.png" alt="Project 2">
+          <h4 style="margin:10px 0 0 0">لوحة تحكم لتدريب اسطف مطعم</h4>
+          <p style="color:var(--muted); font-size:14px">نظام تدريب و ارسال الملفات الخاضه لكل موظف مع امتحانات ورفع ملفات PDF حسب صلاحية الوظائف.</p>
+          <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+          <a href="https://5cfabd7d1010.ngrok-free.app" target="_blank" class="btn" style="display:inline-block;margin-top:10px;text-decoration:none;text-align:center">زيارة الموقع</a>
+        </article>
+        
+        <article class="project fade-up">
+          <img src="./images/pr.ab.png" alt="Project 3">
+          <h4 style="margin:10px 0 0 0">موقع بورتفوليو شخصي</h4>
+          <p style="color:var(--muted); font-size:14px">تصميم بسيط وأنيق قابل للتخصيص بسهولة. و معرفت بعض من المشاريع الذي قمت بها</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <a href="./index.html" target="_blank" class="btn" style="display:inline-block;margin-top:10px;text-decoration:none;text-align:center">زيارة الموقع</a>
+        </article>
+        
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <h2>تواصل معي</h2>
+      <div class="card contact-form">
+        <form action="mailto:abanobpop944@gmail.com" method="post" enctype="text/plain">
+          <div class="contact-grid">
+            <input type="text" name="name" placeholder="الاسم" required>
+            <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+          </div>
+          <input type="text" name="subject" placeholder="الموضوع">
+          <textarea name="message" rows="6" placeholder="اكتب رسالتك هنا" required></textarea>
+          <div style="display:flex; gap:10px; margin-top:10px">
+            <button type="submit" class="btn">أرسل</button>
+            <button type="reset" class="ghost">مسح</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <strong>Abanoub Yousry</strong> — كل الحقوق محفوظة 2025</p>
+    </footer>
+  </main>
+
+  <!-- decorative sushi svg -->
+  <div class="sushi-bg" aria-hidden="true">
+    <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="256" cy="256" r="200" fill="#ff6b6b"/></svg>
+  </div>
+
+
+<script>
+// simple interactions
+document.getElementById('hireBtn').addEventListener('click', ()=>{
+window.open('https://wa.me/201228105398', '_blank')
+})
+document.getElementById('hireNow').addEventListener('click', ()=>{
+window.location.href = '#contact'
+document.querySelector('#contact input[name=name]').focus()
+})
+
+
+// fade-up stager
+document.querySelectorAll('.fade-up').forEach((el,i)=>{
+el.style.animationDelay = (i*80)+'ms'
+})
+
+//cv
+function downloadCV(){
+// replace with a real cv path if you upload it to the site
+const cvUrl = './Abanoub_CV.pdf'
+const a = document.createElement('a')
+a.href = cvUrl
+a.download = 'Abanoub_Yousry_CV.pdf'
+document.body.appendChild(a)
+a.click()
+a.remove()
+}
+
+
+// smooth scrolling for in-page links
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.addEventListener('click', e=>{
+e.preventDefault(); const id = a.getAttribute('href').slice(1); const el = document.getElementById(id);
+if(!el) return; el.scrollIntoView({behavior:'smooth', block:'center'});
+})
+})
+</script>
+</body>
+</html>

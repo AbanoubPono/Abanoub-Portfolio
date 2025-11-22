@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abanoub — Portfolio</title>
+  <meta name="description" content="Abanoub Yousry — Web Designer & Developer from Cairo. Portfolio: projects, about, and contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="logo">
+        <div class="dot">AB</div>
+        <div>
+          <div style="font-weight:700">Abanoub Yousry</div>
+          <div style="font-size:12px;color:var(--muted)">Web Designer & Developer</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <button class="ghost" onclick="downloadCV()">Download CV</button>
+        <button class="btn" id="hireBtn">Hire Me</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="home" class="hero">
+      <div class="card intro fade-up" style="--delay:0ms">
+        <h1>Hello, I'm <span>Abanoub</span></h1>
+        <h3 style="margin-top:6px">A Web Designer & Developer from Cairo, Egypt</h3>
+        <p>I build modern and fast websites focusing on user experience and converting visitors into clients. I work with HTML, CSS, JavaScript, and PHP, and use Bootstrap when needed.</p>
+        <div style="margin-top:18px; display:flex; gap:10px; align-items:center">
+          <button class="btn" id="hireNow">Contact Me</button>
+          <a class="ghost" href="#projects">View My Projects</a>
+        </div>
+        <div class="socials" aria-label="social links">
+          <a href="https://www.facebook.com/share/16StpRuh7W/" title="Facebook">f</a>
+          <a href="https://www.instagram.com/bebopono?igsh=MWFjY3pqbzR2Z3hocQ==" title="Instagram">i</a>
+          <a href="https://www.linkedin.com/in/abanob-yousry-964a89354" title="LinkedIn">in</a>
+          <a href="https://github.com/AbanoubPono" title="GitHub">gh</a>
+        </div>
+      </div>
+
+      <aside class="card profile-img fade-up" style="--delay:120ms">
+        <img src="./images/web.JPG" alt="Abanoub profile" />
+      </aside>
+    </section>
+
+    <section id="about" class="about">
+      <div class="card fade-up">
+        <h2>About Me</h2>
+        <p class="muted">My name is Abanoub Yousry Aziz. I have experience in UI design and creating responsive web pages. I love turning ideas into functional and visually appealing interfaces.</p>
+        <h4 style="margin-top:12px">Skills</h4>
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS / SCSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">PHP & MySQL</div>
+          <div class="skill">Bootstrap</div>
+          <div class="skill">Responsive Design</div>
+        </div>
+        <h4 style="margin-top:14px">Experience</h4>
+        <ul style="color:var(--muted);line-height:1.6">
+          <li>Assistant Engineer — Unilecs</li>
+          <li>Restaurant Manager — Garnell</li>
+        </ul>
+      </div>
+
+      <div class="card fade-up">
+        <h3>Information</h3>
+        <p style="color:var(--muted)"><strong>Location:</strong> Giza, Egypt</p>
+        <p style="color:var(--muted)"><strong>Email:</strong> abanobpop944@gmail.com</p>
+        <p style="color:var(--muted)"><strong>Phone:</strong> 01228105398</p>
+        <div style="margin-top:12px">
+          <a class="btn" href="https://wa.me/201228105398" target="_blank">Send WhatsApp Message</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="margin-top:18px">
+      <h2 style="margin-bottom:10px">Projects</h2>
+      <div class="projects-grid">
+        <article class="project fade-up">
+          <img src="./images/roboot.png" alt="Project 1">
+          <h4 style="margin:10px 0 0 0">Robot Device E‑Commerce Store</h4>
+          <p style="color:var(--muted); font-size:14px">A responsive product showcase with an ordering system and simple admin page.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">PHP</span><span class="tag">Bootstrap</span></div>
+          <a href="./RobootCar.Web/index.html" target="_blank" class="btn" style="display:inline-block;margin-top:10px;text-decoration:none;text-align:center">Visit Site</a>
+        </article>
+
+        <article class="project fade-up">
+          <img src="./images/garnell.png" alt="Project 2">
+          <h4 style="margin:10px 0 0 0">Training Dashboard for Restaurant Staff</h4>
+          <p style="color:var(--muted); font-size:14px">Training system, file management per employee, exams, and PDF uploads based on roles.</p>
+          <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+          <a href="https://cc8a1569647d.ngrok-free.app" target="_blank" class="btn" style="display:inline-block;margin-top:10px;text-decoration:none;text-align:center">Visit Site</a>
+        </article>
+        
+        <article class="project fade-up">
+          <img src="./images/pr.ab.png" alt="Project 3">
+          <h4 style="margin:10px 0 0 0">Personal Portfolio Website in arbic</h4>
+          <p style="color:var(--muted); font-size:14px">A simple and clean design that can be customized easily, showing some of my work.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+          <a href="./indexar.html" target="_blank" class="btn" style="display:inline-block;margin-top:10px;text-decoration:none;text-align:center">Visit Site</a>
+        </article>
+        
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <h2>Contact Me</h2>
+      <div class="card contact-form">
+        <form action="mailto:abanobpop944@gmail.com" method="post" enctype="text/plain">
+          <div class="contact-grid">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <input type="text" name="subject" placeholder="Subject">
+          <textarea name="message" rows="6" placeholder="Write your message here" required></textarea>
+          <div style="display:flex; gap:10px; margin-top:10px">
+            <button type="submit" class="btn">Send</button>
+            <button type="reset" class="ghost">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <strong>Abanoub Yousry</strong> — All Rights Reserved 2025</p>
+    </footer>
+  </main>
+
+  <div class="sushi-bg" aria-hidden="true">
+    <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="256" cy="256" r="200" fill="#ff6b6b"/></svg>
+  </div>
+<script src="script.js"></script>
+
+</body>
+</html>
